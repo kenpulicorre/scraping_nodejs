@@ -153,6 +153,14 @@ router.get("/dataall", async (req, res) => {
   //  return countryDb;
   res.send(dataDb);
 });
+router.delete("/borrar", async (req, res) => {
+  let dataDb = await Data.destroy({
+    where: {},
+    truncate: true,
+  });
+  //  return countryDb;
+  res.send([]);
+});
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 module.exports = router;
