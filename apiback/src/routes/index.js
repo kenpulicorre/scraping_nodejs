@@ -145,6 +145,14 @@ router.get("/reset", (req, res) => {
   x.stop();
   res.send("termino cron");
 });
+router.get("/dataall", async (req, res) => {
+  let dataDb = await Data.findAll({
+    order: [["createdAt", "DESC"]],
+    // attributes: { exclude: ["createdAt", "updatedAt"] },
+  });
+  //  return countryDb;
+  res.send(dataDb);
+});
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 module.exports = router;
