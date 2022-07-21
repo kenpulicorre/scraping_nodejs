@@ -2,15 +2,15 @@
     <img src='https://raw.githubusercontent.com/kenpulicorre/countries_proyect/main/client/src/images/bandera.gif' </img>
 </p>
 
-# Project scraping job with nodejs
+# Scraping job with nodejs Project
 
 ## Objetivos del Proyecto
 
 - Construir una App utlizando React, Redux, Node y Sequelize.
 - Aprender mejores prácticas.
-- Aprender a utilizar scraping
+- Ilustrar el comportamiento scraping, Cron y Job
 
-## enunciado:
+## Enunciado:
 
 Build a simple web application that will act as a task scheduler for simple tasks.
 Specifically, the first task is to ping a website and scrape the headers (or first 1000
@@ -59,7 +59,7 @@ Para verificar que versión tienen instalada:
 >
 > npm -v
 
--**importante2:**debes crear un archivo .env en la carpeta api,
+-**Importante-2:**debes crear un archivo .env en la carpeta api,
 y puede llenar como este ejemplo :
 
      DB_USER=postgres
@@ -86,8 +86,6 @@ Adicionalmente será necesario que creen desde psql una base de datos llamada `b
 
 El contenido de `client` fue creado usando: Create React App.
 
-## Enunciado
-
 #### Tecnologías usadas:
 
 - [ ] React
@@ -95,6 +93,16 @@ El contenido de `client` fue creado usando: Create React App.
 - [ ] Express
 - [ ] Sequelize - Postgres
 - [ ] Node.js
+
+## Back notas:
+
+### orden de dependencias instaladas
+
+- npm init
+- npm i cheerio request request-promise
+- npm i node-cron
+- npm i axios node-localstorage
+- npm i express
 
 #### pruebas desde postman
 
