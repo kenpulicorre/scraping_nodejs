@@ -10,6 +10,35 @@
 - Aprender mejores prácticas.
 - Aprender a utilizar scraping
 
+## enunciado:
+
+Build a simple web application that will act as a task scheduler for simple tasks.
+Specifically, the first task is to ping a website and scrape the headers (or first 1000
+characters). The application should take a Cron syntax expression and a URL as
+input, and then execute the job according to the schedule.
+
+➢ Use any language (C#, Java, Javascript, Go, NodeJs, ...)
+
+➢ Save the scraped date in any database (SQL server, My SQL, mongo,
+postgreSQL, ...)
+
+➢ Provide a web API (REST, GraphQL, etc.)
+
+➢ You can build the application to run locally, or in a public cloud (Azure, AWS,
+GCP) using whatever technology stacks are available for you in that
+environment.
+
+➢ You do not need to include authentication.
+
+➢ UI is optional
+
+➢ You must keep your code in a source control repository (GitHub, Bitbucket,
+etc.)
+
+➢ Do not build a Cron expression parser, there are many to choose from.
+
+➢ Url Preview for CronCron
+
 ## Comenzando
 
 1.  Forkear el repositorio para tener una copia del mismo en sus cuentas
@@ -53,7 +82,7 @@ DB_HOST=localhost
 
 Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credenciales para conectarte a postgres. Este archivo va ser ignorado en la subida a github, ya que contiene información sensible (las credenciales).
 
-Adicionalmente será necesario que creen desde psql una base de datos llamada `data`
+Adicionalmente será necesario que creen desde psql una base de datos llamada `biznation` y el modelo al cual se le realiza el llenado de datos se le denomina en este proyecto `data`
 
 El contenido de `client` fue creado usando: Create React App.
 
@@ -69,11 +98,11 @@ El contenido de `client` fue creado usando: Create React App.
 
 #### pruebas desde postman
 
-- todas las pruebas se realizan desde postaman por lo tanto revice este documento para guiarse: - [ ] **docu postman para proyecto**: -`https://documenter.getpostman.com/view/19592464/UzR1K2oL`
+- todas las pruebas se realizan desde postaman por lo tanto revice este documento para guiarse: - [**docu postman para proyecto**](https://documenter.getpostman.com/view/19592464/UzR1K2oL)
 
 ## Archivo ejecucion :
 
-para ejecutar el archivo back y front solo debe de instalar las dependencias, despues debe de dirijirse a la carpeta desde la terminal y ejecutar :
+para ejecutar el archivo back y front solo debe de instalar las dependencias, despues debe de dirijirse a la carpeta desde la terminal y ejecutar : (el archivo front puede modificar el puerto con el archivo `.env` colocando el puerto deseado POR EJEMPLO :`PORT=4001`)
 
 ```
 npm install
@@ -85,7 +114,24 @@ y una vez se tengan instaladas las dependencias ejecutar la aplicacion,
 npm start
 ```
 
-## nota:
+referencia:
 
-**autor**
+[ toscrape](https://quotes.toscrape.com/)
+
+---
+
+## **AUTOR**
+
 **kenneth E. Puliche Correa**
+
+### <h3> 🤝🏻 &nbsp;Connect with Me </h3>
+
+Email: **ingkeneidel@gmail.com**
+Wpp: **<a href="https://wa.link/0l2haf"> +573114035605 </a>**
+
+## 🌐 Socials:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kenneth-puliche-correa-813311225/)
+</br>
+
+---
